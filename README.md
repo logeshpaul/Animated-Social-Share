@@ -1,4 +1,10 @@
-Animated-Social-Share
-=====================
+Social media share icon with animation - CSS only, No images
 
-Social media share icon with animation (CSS only)
+**Media's available:**
+
+* Facebook
+* Twitter
+* Rss Feed
+
+
+Demo: http://cssdeck.com/labs/animated-social-sharing

@@ -1,0 +1,214 @@
+body {padding:0; margin:0; font:1em/1.4 Cambria, Georgia, sans-serif; color:#333; background:#fff;}
+
+.wrapper {
+    margin: 100px auto;
+    width: 600px;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+  font:0.875em/1 Arial, sans-serif;
+}
+
+ul li {
+  float:left;
+  width: 145px;
+  height: 35px;
+  margin: 0 20px 0 0;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+ul li a {
+  display:block;
+  width:120px;
+  height:35px;
+  /*overflow:hidden;*/
+  border:1px solid transparent;
+  text-decoration:none;
+
+  /* css3 */
+  text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px; /* standards version last */
+}
+ul li a span {
+    position: absolute;
+}
+
+
+.facebook,
+.twitter,
+.rss {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+
+    -webkit-transform-origin: bottom;
+    -webkit-transition: -webkit-transform .5s ease;
+    -webkit-transform: translateY(0) rotateX(0);
+    -moz-transition: -moz-transform .5s ease;
+    -moz-transform: translate(0);
+}
+
+.facebook a {
+  position:relative;
+  border-color:#3c5a98;
+  text-transform:lowercase;
+  font-weight:bold;
+  font-size:30px;
+  line-height:35px;
+  color:#fff;
+  background:#3c5a98;
+  padding: 0 0 0 15px;
+  width: 124px;
+  height: 33px;
+
+  /* css3 */
+  background:-webkit-gradient(linear, left top, left bottom, from(#3c5a98), to(#324c83));
+  background:-moz-linear-gradient(top, #3c5a98, #324c83);
+}
+
+.facebook a span {
+    font-family: arial;
+    text-transform: capitalize;
+    font-size: 14px;
+    top: 0;
+    left: 40px;
+    border-left: 1px solid #263b67;
+    padding-left: 12px;
+}
+
+.twitter a {
+  position:relative;
+  border-color:#a8eaec;
+  text-transform:lowercase;
+  font:bold 25px/1 Tahoma, sans-serif;
+  line-height:35px;
+  color:#76DDF8;
+  background:#daf6f7;
+  padding: 0 0 0 15px;
+  width: 123px;
+  height: 33px;
+
+  /* css3 */
+  text-shadow: 2px 2px 1px #fff, -2px -2px 1px #fff, 2px -2px 1px #fff, -2px 2px 1px #fff;
+  background:-webkit-gradient(linear, left top, left bottom, from(#dbf7f8), to(#88e1e6));
+  background:-moz-linear-gradient(top, #dbf7f8, #88e1e6);
+}
+
+.twitter a span {
+    font-family: arial;
+    text-transform: capitalize;
+    font-size: 14px;
+    top: 0;
+    left: 40px;
+    border-left: 1px solid #88c1c3;
+    padding-left: 25px;
+    color: #4b8fa1;
+
+    text-shadow: 0 1px 0 #fff;
+}
+
+.rss a {
+  position:relative;
+  padding:0 2px;
+  border-color:#ea6635;
+  text-transform:lowercase;
+  font-size:64px;
+  line-height: 35px;
+  font-weight:bold;
+  color:#fff;
+  background:#e36443;
+  width: 135px;
+  height: 33px;
+
+  /* css3 */
+  background:-webkit-gradient(linear, left top, left bottom, from(#f19242), to(#e36443));
+  background:-moz-linear-gradient(top, #f19242, #e36443);
+}
+
+.rss a span {
+    font-family: arial;
+    text-transform: capitalize;
+    font-size: 14px;
+    top: 0;
+    left: 40px;
+    border-left: 1px solid #af4c33;
+    padding-left: 12px;
+    color: #af4c33;
+
+    text-shadow: 0 1px 0 #ffc4b5;
+}
+
+/* create circle */
+.rss a:before {
+  content:"\00a0";
+  position:absolute;
+  bottom:7px;
+  left:12px;
+  width:6px;
+  height:6px;
+  background:#fff;
+
+  /* css3 */
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+}
+
+/* create the two arcs */
+.rss a:after {
+  content:"\00a0";
+  position:absolute;
+  bottom:8px;
+  left:13px;
+  width:10px;
+  height:10px;
+  border-style:double;
+  border-width:10px 10px 0 0;
+  border-color:#fff;
+
+  /* css3 */
+  -moz-border-radius:0 25px 0 0;
+  -webkit-border-top-right-radius:25px;
+  border-radius:0 25px 0 0;
+}
+
+.btn-info {
+    position:relative;
+    background-color: #d6dbde;
+    line-height: 15px;
+    color: #333;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: .8em;
+    font-weight: bold;
+    width: 137px;
+    height: 35px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    margin: 0;
+
+    /* css3 */
+    background: #fff -webkit-linear-gradient(bottom, rgb(215,219,222) 0, rgb(216,220,221) 60%, rgb(193,199,202) 100%);
+    background: #fff -moz-linear-gradient(bottom, rgb(215,219,222) 0, rgb(216,220,221) 60%, rgb(193,199,202) 100%);
+    -webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.fb-wrp:hover .facebook{
+    -webkit-transform: translateX(107px);
+}
+.tr-wrp:hover .twitter {
+    -webkit-transform: translateX(107px);
+}
+.rs-wrp:hover .rss {
+    -webkit-transform: translateX(107px);
+}​
